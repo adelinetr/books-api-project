@@ -1,5 +1,11 @@
 # BooksLibrary Website
 ###### IN PROCESS
+
+![image](https://github.com/adelinetr/books-website/assets/119743518/3cf54d4e-fdc3-4be6-9ed7-e91e6c7a54ec)
+![image](https://github.com/adelinetr/books-website/assets/119743518/4787e803-cbe7-4a19-81e2-a7d039ebaf52)
+![image](https://github.com/adelinetr/books-website/assets/119743518/cd1e8577-3bed-4b85-a99f-0f1c813f44fa)
+
+
 -  In this project I used Tailwind CSS and OpenLibrary API to fetch data and look for the names of any book in search field.
 
 ``` js
