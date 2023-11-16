@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>BookLibrary: Find new books</title>
+</head> 
+<body> 
+    <section class="bg-bgColor min-h-screen " id="hero">
+    <div class="container max-w-6xl mx-auto px-6 py-10 ">
+        <!--Nav Container -->
+        <nav class="flex items-baseline text-center justify-between font-bold text-white">
+            <!--Menu-->
+            <div class="flexlogo text-2xl font-semibold text-primary">BookLibrary</div>
+            <div class="hidden h-10 md:flex md:mx-auto tracking-wider md:space-x-8 text-slate-700">
+                <div class="group">
+                    <a class="hover:text-primary font-normal duration-200" href="">home</a>
+                </div>
+
+                <div class="group">
+                    <a class="hover:text-primary font-normal duration-200" href="">books</a>
+                </div>
+
+                <div class="group">
+                    <a class="hover:text-primary font-normal duration-200" href="">about us</a>
+                </div>
+
+                <div class="group">
+                    <a class="hover:text-primary font-normal duration-200" href="">contacts</a>
+                </div>
+            </div>
+
+            <!--Hamburger Button-->
+            <div class="md:hidden">
+                <button 
+                type="button" 
+                id="menu-btn"
+                class="z-40 block hamburger md:hidden focus:outline-none">
+                    <span class="line-top"></span>
+                    <span class="line-middle"></span>
+                    <span class="line-bottom"></span>
+                </button>
+            </div>
+
+            <!--Mobile menu-->
+            <div id="menu" 
+            class="hidden absolute top-0 bottom-0 left-0 flex-col 
+            self-end z-100  w-full min-h-screen py-1 pt-40 tracking-wider 
+           space-y-10 text-center text-lg text-white 
+           uppercase bg-primary"> 
+                <a href="#">home</a> 
+                <a href="#">books</a>    
+                <a href="#">about us</a>
+                <a href="#">contacts</a> 
+            </div>
+        </nav>
+    </div>
+
+    <h1 class="text-primary text-5xl font-bold 
+    text-center px-5 mt-8 md:text-6xl  mx-auto lg:text-7xl ">  
+        Find your next book by subject on BookLibrary
+    </h1>
+    <p class="text-center max-w-md mx-auto px-6 mt-7 ">
+        Dive into the vast world of literature, explore captivating stories, 
+        and find the perfect book that speaks to you.
+    </p>
+
+    <!--Image Positioning-->
+    <div class="mx-auto mt-20 flex flex-col items-center relative">
+        <!--Images-->
+        <div class="relative mx-auto">
+            <img 
+            class="z-100 top-0 max-w-sm md:mb-5 md:max-w-md md:mt-5 " 
+            src="book-illustration.svg" 
+            alt="">
+        </div>
+    </div>
+    </section>
+
+    <!--Search-->
+    <section class="min-h-screen bg-white flex flex-col items-center "> 
+        <div class=" items-center mx-auto flex max-w-md">
+            <input 
+            id="book-input"
+            type="text" 
+            placeholder="Search a book..."
+            class="text-xl border-b focus:outline-none items-center 
+            mx-auto mt-16 lg:w-96" 
+            >
+            <button id="search-btn">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-8 text-gray-400   duration-200 hover:scale-110 mt-16 "
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5" 
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <circle cx="10" cy="10" r="7" />
+                    <line x1="21" y1="21" x2="15" y2="15" />
+                </svg>
+            </button>
+        </div>
+
+        <!--Books--> 
+            <div id="book-output" class="grid gap-10 m-5 grid-cols-2 items-center mt-16 md:grid-cols-3 lg:gap-24  lg:grid-cols-4 ">
+                 
+ 
+            </div>
+
+        </div>
+    </section>
+ 
+    <script src="js/script.js"></script>
+</body>
+</html>
