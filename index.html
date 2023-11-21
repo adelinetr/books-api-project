@@ -93,37 +93,42 @@
     </section>
 
     <!--Search-->
-    <section class="min-h-screen bg-white flex flex-col items-center "> 
-        <div class=" items-center mx-auto flex max-w-md">
-            <input 
-            id="book-input"
-            type="text" 
-            placeholder="Search a book..."
-            class="text-xl border-b focus:outline-none items-center 
-            mx-auto mt-16 lg:w-96" 
-            >
-            <button id="search-btn">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-8 text-gray-400   duration-200 hover:scale-110 mt-16 "
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5" 
-                    stroke="currentColor"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <circle cx="10" cy="10" r="7" />
-                    <line x1="21" y1="21" x2="15" y2="15" />
-                </svg>
-            </button>
+    <section class="mt-16 min-h-screen bg-white flex flex-col items-center"> 
+        <div class="flex flex-col items-center mx-auto max-w-6xl">
+            <!--Heading-->
+            <div class="h2">
+                <h2 class="text-4xl max-w-lg text-center text-primary font-bold">Your Gateway to Finding Books, One Keyword at a Time</h2>
+            </div>
+            <!--Search Input-->
+            <div class="w-6xl mt-10 flex">
+                <input 
+                id="book-input"
+                type="text" 
+                placeholder="Search a book..."
+                class="text-xl border-b focus:outline-none w-100 mt-6 md:w-72 lg:w-96" 
+                > 
+                <button id="search-btn">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-8 text-gray-400 duration-200 hover:scale-110 mt-6"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5" 
+                        stroke="currentColor"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="10" cy="10" r="7" />
+                        <line x1="21" y1="21" x2="15" y2="15" />
+                    </svg>
+                </button>
+            </div>
         </div>
 
         <!--Books--> 
             <div id="book-output" class="grid gap-10 m-5 grid-cols-2 items-center mt-16 md:grid-cols-3 lg:gap-24  lg:grid-cols-4 ">
                  
- 
             </div>
 
         </div>
