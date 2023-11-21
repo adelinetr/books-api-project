@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         primary: '#DCA16A',
         primaryDark: '#B17A47',
-        bgColor: '#F7EDE4',
+        buttonColor: '#D4924F',
       }
     },
   },

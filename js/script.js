@@ -34,8 +34,6 @@ async function searchBooks() {
             `
         }
     });
-
-    console.log(output)
 }
 
 SEARCH_BTN.addEventListener('click', searchBooks)

@@ -10,27 +10,23 @@
     <title>BookLibrary: Find new books</title>
 </head> 
 <body> 
-    <section class="bg-bgColor min-h-screen " id="hero">
+    <section class="bg-white min-h-screen " id="hero">
     <div class="container max-w-6xl mx-auto px-6 py-10 ">
         <!--Nav Container -->
         <nav class="flex items-baseline text-center justify-between font-bold text-white">
             <!--Menu-->
             <div class="flexlogo text-2xl font-semibold text-primary">BookLibrary</div>
-            <div class="hidden h-10 md:flex md:mx-auto tracking-wider md:space-x-8 text-slate-700">
+            <div class="hidden h-10 md:flex md:ml-0 tracking-wider md:space-x-8 text-slate-700">
                 <div class="group">
-                    <a class="hover:text-primary font-normal duration-200" href="">home</a>
+                    <a class="hover:text-primary font-normal duration-200" href="">Home</a>
                 </div>
 
                 <div class="group">
-                    <a class="hover:text-primary font-normal duration-200" href="">books</a>
+                    <a class="hover:text-primary font-normal duration-200" href="">Books</a>
                 </div>
 
                 <div class="group">
-                    <a class="hover:text-primary font-normal duration-200" href="">about us</a>
-                </div>
-
-                <div class="group">
-                    <a class="hover:text-primary font-normal duration-200" href="">contacts</a>
+                    <a class="hover:text-primary font-normal duration-200" href="">Favourites</a>
                 </div>
             </div>
 
@@ -60,25 +56,40 @@
         </nav>
     </div>
 
-    <h1 class="text-primary text-5xl font-bold 
-    text-center px-5 mt-8 md:text-6xl  mx-auto lg:text-7xl ">  
-        Find your next book by subject on BookLibrary
-    </h1>
-    <p class="text-center max-w-md mx-auto px-6 mt-7 ">
-        Dive into the vast world of literature, explore captivating stories, 
-        and find the perfect book that speaks to you.
-    </p>
+    <div class="flex flex-col mx-auto md:flex-row md:max-w-5xl">      
+        <!--Text Block-->
+        <div class="mx-0 ">
+            <h1 class="text-primary text-5xl font-bold 
+            text-center px-5 mt-8 md:text-6xl md:text-left">  
+                Find your next book by subject on BookLibrary 
+            </h1>
+            <p class="text-center mx-auto px-6 mt-7 md:text-left md:max-w-md md:mx-0">     
+                Dive into the vast world of literature, explore captivating stories, 
+                and find the perfect book that speaks to you.
+            </p>    
 
-    <!--Image Positioning-->
-    <div class="mx-auto mt-20 flex flex-col items-center relative">
-        <!--Images-->
-        <div class="relative mx-auto">
-            <img 
-            class="z-100 top-0 max-w-sm md:mb-5 md:max-w-md md:mt-5 " 
-            src="book-illustration.svg" 
-            alt="">
+            <div class="">
+                    <button
+                    class="group flex items-center mx-auto mt-8 md:mx-5"  
+                    type="button">  
+                        <a href="#" class="border-2 border-buttonColor text-buttonColor font-semibold rounded-full px-10 py-2
+                        group-hover:bg-buttonColor group-hover:text-white duration-200">Search Now</a>  
+                    </button> 
+            </div> 
+        </div>
+    
+        <!--Image Positioning-->
+        <div class="mx-auto mt-16 flex flex-col items-center relative">
+            <!--Images-->
+            <div class="relative mx-auto">
+                <img 
+                class="z-100 top-0 max-w-sm md:mb-5 md:max-w-sm md:mt-2 " 
+                src="book-illustration.svg" 
+                alt="">
+            </div>
         </div>
     </div>
+
     </section>
 
     <!--Search-->
