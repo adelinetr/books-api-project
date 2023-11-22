@@ -24,7 +24,8 @@ async function searchBooks() {
     fetch('https://openlibrary.org/search.json?q='+input)
     .then(a => a.json()) //convert response to an object
     .then(response => {
-        for(let i=0; i<30; i++){
+        for(let i=0; i<60; i++){
+            if (response.docs[i].cover_i || response.docs[i].cover) {
             output.innerHTML+= `
             <div class="w-44 h-65"> 
                         <img src="https://covers.openlibrary.org/b/isbn/`+response.docs[i].isbn[0]+`-M.jpg" alt="">
@@ -32,6 +33,7 @@ async function searchBooks() {
                         <h4 id="book-author" class="text-gray-400">`+response.docs[i].author_name[0]+`</h4>  
             </div>
             `
+            }
         }
     });
 }
